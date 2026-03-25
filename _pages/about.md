@@ -15,7 +15,7 @@ I am currently conducting my Master's thesis at the University of Cambridge, wit
 
 Previously, I worked as an Undergraduate Researcher (UROP) at Politecnico di Torino, where I investigated methods to reduce the complexity of Large Language Model inference for deployment on edge devices.
 
-In parallel, I worked as a Perception and Computer Vision Engineer in the [Squadra Corse Polito](https://www.squadracorsepolito.com) (Driverless division), contributing to the development of LiDAR based systems for autonomous driving applications.
+In parallel, I worked as a Perception and AI Engineer in the [Squadra Corse Polito](https://www.squadracorsepolito.com) (Driverless division), contributing to the development of LiDAR based systems for autonomous driving applications.
 
 ```Interests```: Deep RL, Computer vision, Robotics, Deep NLP, Math ML \\
 ```Skills```: Pytorch, CUDA, C++, ROS, OpenCV, Linux, MLib, Spark, Hadoop
