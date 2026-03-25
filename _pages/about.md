@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am a Master's student currently enrolled in a double degree program between Politecnico di Torino (Italy) and the National School of Computer Science and Applied Mathematics (France), specializing in Artificial Intelligence. \\
+I am a Master's student currently enrolled in a double degree program between Politecnico di Torino (Italy) and the École Nationale Supérieure d'Informatique et de Mathématiques Appliquées (France), specializing in Artificial Intelligence. \\
 I hold a Bachelor's degree in Physics Engineering from Politecnico di Torino.
 
 I am currently conducting my Master's thesis at the University of Cambridge, within the [CV4DT](https://cv4dt.github.io) team, focusing on Physics-Informed Neural Networks for robotics.
