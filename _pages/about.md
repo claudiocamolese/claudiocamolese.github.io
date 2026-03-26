@@ -17,6 +17,6 @@ Previously, I worked as an Undergraduate Researcher (UROP) at Politecnico di Tor
 
 In parallel, I worked as a Perception and AI Engineer in the [Squadra Corse Polito](https://www.squadracorsepolito.com) (Driverless division), contributing to the development of LiDAR based systems for autonomous driving applications.
 
-```Interests```: Deep RL, Computer vision, Robotics, Deep NLP, Math ML \\
+```Interests```: Deep RL, Computer vision, Generative AI, Robotics, Deep NLP, Math ML \\
 ```Skills```: Pytorch, CUDA, C++, ROS, OpenCV, Linux, MLib, Spark, Hadoop \\
 ```Relevant courses```: Generative multimodal AI, Computer vision, Deep learning, Robot learning, GPU computing, Robotics, Machine learning, Math in ML
