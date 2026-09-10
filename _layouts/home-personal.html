@@ -1,0 +1,36 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    <meta charset="utf-8">
+    {% include seo.html %}
+    <link href="{{ '/feed.xml' | relative_url }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}" sizes="192x192">
+    <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <meta name="theme-color" content="#fffaf0">
+  </head>
+
+  <body class="home-personal-page">
+    {% include browser-upgrade.html %}
+
+    {{ content }}
+
+    <script type="module" src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+    {% include analytics.html %}
+  </body>
+</html>

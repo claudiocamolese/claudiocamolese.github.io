@@ -1,0 +1,688 @@
+/* ==========================================================================
+   PERSONAL HOMEPAGE
+   ========================================================================== */
+
+.home-personal-page {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0;
+  color: #161616;
+  background: #fffaf0;
+}
+
+
+/* ==========================================================================
+   MAIN CONTAINER
+   ========================================================================== */
+
+.home-personal {
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 34px 0 68px;
+}
+
+
+/* ==========================================================================
+   GLOBAL LINKS / EMPHASIS
+   ========================================================================== */
+
+.home-personal a {
+  color: #b98718;
+  text-decoration: none;
+}
+
+.home-personal strong,
+.home-personal b {
+  color: #7a1821;
+  font-weight: 700;
+}
+
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+.home-personal__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-bottom: 1.7rem;
+  padding-bottom: 0.9rem;
+
+  border-bottom: 1px solid rgba(22, 22, 22, 0.13);
+}
+
+.home-personal__brand {
+  color: #161616 !important;
+
+  font-family: $serif;
+  font-size: $type-size-5;
+  font-weight: 700;
+
+  text-decoration: none !important;
+}
+
+.home-personal__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.9rem;
+}
+
+.home-personal__tab {
+  color: #6b655d !important;
+
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 800;
+
+  letter-spacing: 0;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.home-personal__tab.is-active {
+  color: #161616 !important;
+}
+
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.home-personal__hero {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+
+  padding-top: 0;
+}
+
+
+/* Portrait column */
+
+.home-personal__portrait-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.8rem;
+
+  transform: none;
+}
+
+.home-personal__portrait {
+  display: block;
+
+  width: 210px;
+  height: 210px;
+
+  margin: 0;
+
+  object-fit: cover;
+
+  border: 7px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+
+  box-shadow: 0 16px 36px rgba(22, 22, 22, 0.15);
+}
+
+
+/* Hero intro */
+
+.home-personal__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: left;
+
+  transform: translateY(50px);
+}
+
+.home-personal__intro h1 {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #161616;
+
+  font-family: $serif;
+  font-size: clamp(1.7rem, 2.1vw, 2.4rem);
+  line-height: 1.08;
+}
+
+.home-personal__intro p {
+  max-width: 690px;
+
+  margin: 1.35rem 0 0;
+
+  color: #5f5a53;
+
+  font-size: $type-size-5;
+  line-height: 1.62;
+
+  text-align: left;
+}
+
+
+/* ==========================================================================
+   EYEBROWS
+   ========================================================================== */
+
+.home-personal__eyebrow {
+  margin: 0 0 0.75rem;
+
+  color: #b98718;
+
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 800;
+
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.home-personal__eyebrow--intro {
+  margin: 0 0 0.75rem;
+
+  color: #b98718;
+
+  font-size: 0.82rem;
+  font-weight: 900;
+
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.home-personal__intro .home-personal__eyebrow--intro {
+  color: #b98718;
+}
+
+
+/* ==========================================================================
+   ACTION BUTTONS / CHIPS
+   ========================================================================== */
+
+.home-personal__actions,
+.home-personal__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+/* Action buttons */
+
+.home-personal__actions {
+  justify-content: flex-start;
+
+  margin-top: 1.35rem;
+}
+
+.home-personal__actions a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 36px;
+
+  padding: 0.45rem 0.75rem;
+
+  border: 1px solid rgba(22, 22, 22, 0.22);
+  border-radius: 999px;
+
+  background: transparent;
+  color: #161616 !important;
+
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 800;
+
+  text-decoration: none !important;
+
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.35s ease, border-color 0.35s ease, transform 0.25s ease;
+}
+
+.home-personal__actions a::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  background: #161616;
+  z-index: -1;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.35s ease;
+}
+
+.home-personal__actions a:hover::before,
+.home-personal__actions a:focus-visible::before {
+  width: 100%;
+}
+
+.home-personal__actions a:hover,
+.home-personal__actions a:focus-visible {
+  color: #fffaf0 !important;
+  border-color: #161616;
+  transform: translateY(-1px);
+}
+
+.home-personal__actions a + a {
+  background: transparent;
+  color: #161616 !important;
+}
+
+
+/* Chips */
+
+.home-personal__chips {
+  justify-content: flex-start;
+
+  margin-top: 1.45rem;
+}
+
+.home-personal__chips span {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 31px;
+
+  padding: 0.35rem 0.65rem;
+
+  border: 1px solid rgba(22, 22, 22, 0.15);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.58);
+  color: #332f2a;
+
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 800;
+}
+
+
+/* ==========================================================================
+   GENERAL SECTIONS
+   ========================================================================== */
+
+.home-personal__section {
+  margin-top: 4.2rem;
+  padding-top: 1.7rem;
+
+  border-top: 1px solid rgba(22, 22, 22, 0.13);
+}
+
+.home-personal__section h2 {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #161616;
+
+  font-family: $serif;
+  font-size: $type-size-2;
+  line-height: 1.12;
+
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   ABOUT TEXT
+   ========================================================================== */
+
+.home-personal__about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+
+  max-width: 760px;
+
+  margin: 1.35rem auto 0;
+
+  text-align: left;
+}
+
+.home-personal__about-grid p {
+  margin: 0;
+
+  color: #514d47;
+
+  font-size: $type-size-5;
+  line-height: 1.68;
+
+  text-align: left;
+}
+
+.home-personal__experience-row {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 2rem;
+
+  max-width: 980px;
+  margin: 1.35rem auto 0;
+}
+
+.home-personal__experience-copy {
+  max-width: 100%;
+}
+
+.home-personal__experience-copy p {
+  margin: 0;
+
+  color: #514d47;
+
+  font-size: $type-size-5;
+  line-height: 1.68;
+
+  text-align: left;
+}
+
+
+/* ==========================================================================
+   EXPERIENCE GALLERY
+   ========================================================================== */
+
+.home-personal__experience-gallery {
+  position: relative;
+
+  max-width: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.home-personal__experience-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-personal__experience-slide {
+  min-width: 100%;
+}
+
+.home-personal__experience-gallery img {
+  display: block;
+
+  width: 100%;
+  height: 210px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.home-personal__gallery-nav {
+  position: absolute;
+  inset: 50% 0 auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.home-personal__gallery-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.1rem;
+  height: 2.1rem;
+
+  border: 1px solid rgba(22, 22, 22, 0.14);
+  border-radius: 50%;
+
+  background: rgba(255, 250, 240, 0.72);
+  color: rgba(22, 22, 22, 0.7);
+
+  font-size: 1.1rem;
+  line-height: 1;
+
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.home-personal__gallery-btn:hover,
+.home-personal__gallery-btn:focus-visible {
+  transform: scale(1.03);
+  background: rgba(255, 250, 240, 0.92);
+  border-color: rgba(185, 135, 24, 0.4);
+  color: #161616;
+}
+
+.home-personal__gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  margin-top: 0.85rem;
+}
+
+.home-personal__gallery-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: rgba(22, 22, 22, 0.18);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-personal__gallery-dot.is-active {
+  background: rgba(185, 135, 24, 0.9);
+}
+
+.home-personal__gallery-dot:hover,
+.home-personal__gallery-dot:focus-visible {
+  transform: scale(1.08);
+}
+
+
+/* ==========================================================================
+   ACADEMIC BACKGROUND
+   ========================================================================== */
+
+/*
+   This moves ONLY the Academic Background subsection lower.
+   The corresponding HTML section must have:
+
+   class="home-personal__subsection home-personal__academic"
+*/
+
+.home-personal__academic {
+  margin-top: 30px;
+}
+
+
+/* ==========================================================================
+   GENERAL GALLERY
+   ========================================================================== */
+
+.home-personal__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+
+  max-width: 680px;
+
+  margin: 1.8rem auto 0;
+}
+
+.home-personal__gallery img {
+  display: block;
+
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  border: 1px solid rgba(22, 22, 22, 0.08);
+  border-radius: 1.25rem;
+
+  box-shadow: 0 18px 30px rgba(22, 22, 22, 0.08);
+}
+
+
+/* ==========================================================================
+   NEWS / TIMELINE
+   ========================================================================== */
+
+.home-personal__timeline h2 {
+  margin-bottom: 0.9rem;
+
+  font-size: $type-size-4;
+}
+
+.home-personal__news-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.home-personal__news-list li {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1.2rem;
+
+  padding: 0.78rem 0;
+
+  border-top: 1px solid rgba(22, 22, 22, 0.13);
+}
+
+.home-personal__news-list li:last-child {
+  border-bottom: 1px solid rgba(22, 22, 22, 0.13);
+}
+
+.home-personal__news-list time {
+  color: #746e66;
+
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.5;
+}
+
+.home-personal__news-list p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #161616;
+
+  font-size: $type-size-5;
+  line-height: 1.68;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media screen and (max-width: 760px) {
+
+  .home-personal {
+    width: min(100% - 26px, 1120px);
+
+    padding-top: 24px;
+  }
+
+
+  /* Navigation */
+
+  .home-personal__nav {
+    display: block;
+
+    margin-bottom: 2.6rem;
+  }
+
+  .home-personal__tabs {
+    justify-content: flex-start;
+
+    margin-top: 0.75rem;
+  }
+
+
+  /* Hero */
+
+  .home-personal__hero {
+    display: block;
+  }
+
+  .home-personal__portrait {
+    width: 154px;
+    height: 154px;
+
+    margin-bottom: 1.35rem;
+  }
+
+  .home-personal__intro {
+    transform: none;
+  }
+
+  .home-personal__intro h1 {
+    font-size: $type-size-2;
+  }
+
+
+  /* Sections */
+
+  .home-personal__section h2 {
+    font-size: $type-size-3;
+  }
+
+  .home-personal__about-grid {
+    display: block;
+  }
+
+  .home-personal__about-grid p + p {
+    margin-top: 1rem;
+  }
+
+
+  /* Academic background */
+
+  .home-personal__academic {
+    margin-top: 70px;
+  }
+
+
+  /* Experience gallery */
+
+  .home-personal__experience-gallery {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* News */
+
+  .home-personal__news-list li {
+    display: block;
+
+    padding: 0.85rem 0;
+  }
+
+  .home-personal__news-list time {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-size: $type-size-6;
+  }
+
+  .home-personal__news-list p {
+    font-size: $type-size-5;
+  }
+}
