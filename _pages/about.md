@@ -111,7 +111,6 @@ redirect_from:
         <br>
 
         I am passionate about <strong>Physical AI</strong>. <br>
-        <br>
         <strong>Research interest</strong>: World Models, VLA, Robotics, Computer Vision.
       </p>
 
