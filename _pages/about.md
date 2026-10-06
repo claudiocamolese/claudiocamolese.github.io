@@ -90,9 +90,10 @@ redirect_from:
 
     <section id="news" class="news" aria-labelledby="news-title">
       <h2 id="news-title">News</h2>
-      <p><span class="date-badge">Now</span> I am starting my Master's degree in Paris in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning).</p>
+      <p><span class="date-badge">Now</span> I am starting my Master's degree in App in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning).</p>
       <p><time class="date-badge" datetime="2026-09">Sep. 2026</time> I graduated from Politecnico di Torino and ENSIMAG, specializing in Artificial Intelligence.</p>
-      <p><time class="date-badge" datetime="2026-08">Aug. 2026</time> I completed my research internship at the University of Cambridge. What an experience!</p>
+      <p><time class="date-badge" datetime="2026-08">Aug. 2026</time> I completed my research internship at the University of Cambridge.</p>
+      <p><time class="date-badge" datetime="2024-07">July. 2026</time> I graduated from Politecnico di Torino in Physics engineering.</p>
     </section>
 
     <section id="experience" aria-labelledby="experience-title">
@@ -141,7 +142,7 @@ redirect_from:
       <article class="entry-card">
         <div class="entry-logo"><img src="{{ '/images/polito.png' | relative_url }}" alt="Politecnico di Torino" loading="lazy"></div>
         <div class="entry-date"><span class="date-badge">2021–2024</span></div>
-        <div class="entry-copy"><h3>Politecnico di Torino</h3><p>Bachelor's degree in Physical Engineering.</p></div>
+        <div class="entry-copy"><h3>Politecnico di Torino</h3><p>Bachelor's degree in Physics Engineering.</p></div>
       </article>
     </section>
 
