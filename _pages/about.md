@@ -54,7 +54,7 @@ redirect_from:
       <h2 id="about-title">About</h2>
       <p>I am a Master's student in Applied Mathematics at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a> and <a href="https://www.universite-paris-saclay.fr/">Université Paris-Saclay</a>, in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning).</p>
       <p>I am passionate about <strong>Physical AI</strong>. My research interests include world models, vision-language-action models, robotics, and computer vision.</p>
-      <p>During my studies, I worked on physics-informed methods for VLA safety at the <a href="#cambridge">University of Cambridge</a>, LiDAR-based perception for <a href="#driverless">autonomous racing</a>, and <a href="#urop">efficient language model inference</a>. I hold a double Master's degree specializing in Artificial Intelligence and a Bachelor's degree in Physical Engineering.</p>
+      <p>During my studies, I worked on physics-informed methods for VLA safety at the <a href="#cambridge">University of Cambridge</a>, LiDAR-based perception for <a href="#driverless">autonomous racing</a>, and <a href="#urop">efficient language model inference</a>. I hold a double Master's degree specializing in Artificial Intelligence and a Bachelor's degree in Physics Engineering.</p>
       <div class="affiliations" aria-label="Academic and research affiliations">
         <div class="current-affiliation">
           <h3>Currently</h3>
