@@ -90,7 +90,7 @@ redirect_from:
 
     <section id="news" class="news" aria-labelledby="news-title">
       <h2 id="news-title">News</h2>
-      <p><span class="date-badge">Now</span> I am starting my Master's degree in Mathematics and applications in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning) at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a>.</p>
+      <p><span class="date-badge">Now</span> I am pursuing a Master's degree in Mathematics in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning) at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a>.</p>
       <p><time class="date-badge" datetime="2026-09">Sep. 2026</time> I graduated from Politecnico di Torino and ENSIMAG, specializing in Artificial Intelligence.</p>
       <p><time class="date-badge" datetime="2026-08">Aug. 2026</time> I completed my research internship at the University of Cambridge.</p>
       <p><time class="date-badge" datetime="2024-07">July. 2026</time> I graduated from Politecnico di Torino in Physics engineering.</p>
