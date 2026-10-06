@@ -93,7 +93,7 @@ redirect_from:
       <p><span class="date-badge">Now</span> I am pursuing a Master's degree in Mathematics and applications in the <a href="https://www.master-mva.com/">MVA program</a> at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a>.</p>
       <p><time class="date-badge" datetime="2026-09">Sep. 2026</time> I graduated from Politecnico di Torino and ENSIMAG, specializing in Artificial Intelligence.</p>
       <p><time class="date-badge" datetime="2026-08">Aug. 2026</time> I completed my research internship at the University of Cambridge.</p>
-      <p><time class="date-badge" datetime="2024-07">July. 2026</time> I graduated from Politecnico di Torino in Physics engineering.</p>
+      <p><time class="date-badge" datetime="2024-07">July. 2024</time> I graduated from Politecnico di Torino in Physics engineering.</p>
     </section>
 
     <section id="experience" aria-labelledby="experience-title">
