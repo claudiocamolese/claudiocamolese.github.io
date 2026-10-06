@@ -107,9 +107,8 @@ redirect_from:
         </div>
       </article>
       <article class="entry-card" id="driverless">
-        <div class="entry-logo entry-logo--captioned">
-          <img class="logo-emphasized" src="{{ '/images/sc-polito.png' | relative_url }}" alt="Squadra Corse Polito" loading="lazy">
-          <span>Squadra Corse</span>
+        <div class="entry-logo">
+          <img src="{{ '/images/sc-polito.png' | relative_url }}" alt="Squadra Corse Polito" loading="lazy">
         </div>
         <div class="entry-date"><span class="date-badge">2024–2025</span></div>
         <div class="entry-copy">

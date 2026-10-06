@@ -80,7 +80,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .entry-logo img { display: block; width: 130%; max-width: none; height: 94px; object-fit: contain; }
 .entry-logo-stack img { display: block; width: 130%; max-width: none; height: 44px; object-fit: contain; }
 .entry-logo-stack:has(.logo-emphasized) { gap: .85rem; padding-block: .8rem; }
-.entry-logo--captioned span { color: var(--accent); font-size: .68rem; font-weight: 700; letter-spacing: .03em; text-align: center; }
 .entry-institution { padding: .5rem; font-size: .7rem; font-weight: 700; text-align: center; letter-spacing: .04em; color: var(--accent); }
 .entry-copy p:last-child, .project-card p:last-child { margin-bottom: 0; }
 .entry-card:focus-within { background: var(--hover); box-shadow: .75rem 0 var(--hover), -.75rem 0 var(--hover); }
