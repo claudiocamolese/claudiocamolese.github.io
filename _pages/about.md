@@ -44,9 +44,8 @@ redirect_from:
       <p class="nav-label">Index</p>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#publications">Publications</a>
       <a href="#education">Education</a>
-      <a href="#projects">Other projects</a>
+      <a href="#projects">Projects</a>
     </nav>
   </aside>
 
@@ -128,17 +127,6 @@ redirect_from:
       </article>
     </section>
 
-    <section id="publications" aria-labelledby="publications-title">
-      <h2 id="publications-title">Publications</h2>
-      <article class="entry-card publication-card">
-        <div class="entry-copy">
-          <h3>PhiSVLA: Physics-Informed Safety for Vision Language Action manipulation</h3>
-          <p><strong>Claudio Camolese</strong>, Giuseppe Averta, Olaf Wysocki, Guangming Wang</p>
-          <p class="muted">Manuscript in preparation</p>
-        </div>
-      </article>
-    </section>
-
     <section id="education" aria-labelledby="education-title">
       <h2 id="education-title">Education</h2>
       <article class="entry-card" id="mva">
@@ -159,11 +147,39 @@ redirect_from:
     </section>
 
     <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Other projects</h2>
-      <article class="entry-card project-card"><h3>RGB-D 6D Object Pose Estimation</h3><p>An end-to-end pipeline for object position and orientation estimation, evaluated on LINEMOD and adapted for real-time traffic-cone pose estimation in the Squadra Corse Driverless simulator.</p></article>
-      <article class="entry-card project-card"><h3>Semantic Scene Understanding for Autonomous Drones</h3><p>Semantic segmentation of aerial imagery with DeepLabV3+ for autonomous navigation and environmental perception.</p></article>
-      <article class="entry-card project-card"><h3>Sim-to-Real Reinforcement Learning</h3><p>Robust MuJoCo Hopper control policies under dynamics shifts, using uniform domain randomization to study transfer across different robot dynamics.</p></article>
-      <article class="entry-card project-card"><h3>Generative Models for Image Synthesis</h3><p>Diffusion models, flow-matching models, GANs, and VAEs implemented from scratch, comparing training stability, sample quality, and inference behaviour.</p></article>
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="entry-card project-card">
+        <div class="project-image"><img src="{{ '/images/project-physvla.png' | relative_url }}" alt="Concept visualization of the PhySVLA safety layer for robotic manipulation" loading="lazy"></div>
+        <div class="entry-copy">
+          <h3>PhySVLA</h3>
+          <p>A plug-and-play physics-informed safety layer for Vision-Language-Action models that minimally corrects unsafe actions while preserving the intended task. The perception pipeline combines multi-view pointclouds and images to identify task-relevant objects and build obstacle representations. Evaluation spans 1,200 SafeLIBERO episodes per configuration across multiple suites, safety levels, and VLA backbones.</p>
+        </div>
+      </article>
+
+      <article class="entry-card project-card">
+        <div class="project-image"><img src="{{ '/images/project-moe-locomotion.png' | relative_url }}" alt="Concept visualization of temporal mixture-of-experts quadruped locomotion" loading="lazy"></div>
+        <div class="entry-copy">
+          <h3>Temporal Mixture-of-Experts for Quadruped Parkour Locomotion</h3>
+          <p>Extended an IsaacLab-based perceptive locomotion framework for the Unitree Go2 with a temporal Mixture-of-Experts policy architecture. Developed and evaluated teacher–student locomotion policies using temporal expert routing to improve adaptation across heterogeneous terrain and parkour behaviours.</p>
+        </div>
+      </article>
+
+      <article class="entry-card project-card">
+        <div class="project-image"><img src="{{ '/images/project-rgbd-pose.png' | relative_url }}" alt="Concept visualization of RGB-D traffic-cone pose estimation" loading="lazy"></div>
+        <div class="entry-copy">
+          <h3>RGB-D 6D Object Pose Estimation</h3>
+          <p>Developed an end-to-end pipeline for estimating object position and orientation from RGB-D observations. Evaluated the approach on LINEMOD using the ADD(-S) metric, then adapted it for real-time traffic-cone pose estimation in the Squadra Corse Driverless simulator while the vehicle was moving.</p>
+        </div>
+      </article>
+
+      <article class="entry-card project-card">
+        <div class="project-image"><img src="{{ '/images/project-drone-segmentation.png' | relative_url }}" alt="Concept visualization of semantic scene understanding for an autonomous drone" loading="lazy"></div>
+        <div class="entry-copy">
+          <h3>Semantic Scene Understanding for Autonomous Drones</h3>
+          <p>Implemented a DeepLabV3+ architecture for semantic segmentation of aerial imagery, enabling pixel-level scene understanding for autonomous navigation and environmental perception.</p>
+        </div>
+      </article>
     </section>
 
     <footer class="site-footer"><span>© Claudio Camolese {{ site.time | date: '%Y' }}</span><a href="#top">Back to top ↑</a></footer>
