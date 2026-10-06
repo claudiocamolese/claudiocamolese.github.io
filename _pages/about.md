@@ -152,7 +152,7 @@ redirect_from:
       <article class="entry-card project-card">
         <div class="project-image"><img src="{{ '/images/project-physvla.png' | relative_url }}" alt="Concept visualization of the PhySVLA safety layer for robotic manipulation" loading="lazy"></div>
         <div class="entry-copy">
-          <h3>PhySVLA</h3>
+          <h3>PhySVLA: Physics-Informed Safety for Vision-Language-Action based manipulation</h3>
           <p>A plug-and-play physics-informed safety layer for Vision-Language-Action models that minimally corrects unsafe actions while preserving the intended task. The perception pipeline combines multi-view pointclouds and images to identify task-relevant objects and build obstacle representations. Evaluation spans 1,200 SafeLIBERO episodes per configuration across multiple suites, safety levels, and VLA backbones.</p>
         </div>
       </article>
