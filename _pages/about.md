@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "About me"
+title: "Applied Mathematics & Physical AI"
+description: "Claudio Camolese — Applied Mathematics, Physical AI, robotics and computer vision."
 layout: home-personal
 author_profile: false
 redirect_from:
@@ -8,494 +9,163 @@ redirect_from:
   - /about.html
 ---
 
-<main class="home-personal" id="about">
-
-  <!-- NAVIGATION -->
-  <nav class="home-personal__nav" aria-label="Primary">
-
-    <a
-      class="home-personal__brand"
-      href="{{ '/' | relative_url }}"
-    >
-      Claudio Camolese
-    </a>
-
-    <div class="home-personal__tabs">
-
-      <a
-        class="home-personal__tab is-active"
-        href="#about"
-      >
-        About
-      </a>
-
-      <a
-        class="home-personal__tab home-personal__tab--future"
-        href="#projects"
-        hidden
-      >
-        Projects
-      </a>
-
-      <a
-        class="home-personal__tab home-personal__tab--future"
-        href="#blog"
-        hidden
-      >
-        Blog
-      </a>
-
-    </div>
-
-  </nav>
-
-
-  <!-- HERO -->
-  <section
-    class="home-personal__hero"
-    aria-labelledby="home-title"
-  >
-
-    <div class="home-personal__portrait-stack">
-
-      <p class="home-personal__eyebrow home-personal__eyebrow--intro">
-        Applied Math | AI Engineer | Physics Engineer
-      </p>
-
-      <img
-        class="home-personal__portrait"
-        src="{{ '/images/profile.png' | relative_url }}"
-        alt="Claudio Camolese portrait"
-      >
-
-    </div>
-
-
-    <div class="home-personal__intro">
-
-      <h1 id="home-title">
-        Claudio Camolese
-      </h1>
-
-      <p>
-        I am a Master's student in <strong>Applied Mathematics</strong> at
-
-        <a
-          href="https://ens-paris-saclay.fr/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ENS Paris-Saclay
-        </a>
-
-        and
-
-        <a
-          href="https://www.universite-paris-saclay.fr/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Université Paris-Saclay
-        </a>, in the
-
-        <a
-          href="https://www.master-mva.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MVA program
-        </a>
-
-        (Mathematics, Vision, and Learning).
-
-        <br>
-
-        I am passionate about <strong>Physical AI</strong>. <br>
-        <strong>Research interest</strong>: World Models, VLA, Robotics, Computer Vision.
-      </p>
-
-
-      <div
-        class="home-personal__actions"
-        aria-label="Profile links"
-      >
-
-        <a
-          href="https://github.com/claudiocamolese"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/claudio-camolese"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a href="mailto:claudiocamolese@gmail.com">
-          Email
-        </a>
-
+<header class="page-header">
+  <div class="header-shell">
+    <div class="hero-grid">
+      <div class="hero-balance" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <h1 class="project-name">Claudio Camolese</h1>
+        <p class="project-tagline">Applied Mathematics Master's student<br><span>@ ENS Paris-Saclay · MVA</span></p>
       </div>
-
+      <div class="portrait-wrap">
+        <img src="{{ '/images/profile.png' | relative_url }}" alt="Portrait of Claudio Camolese" width="150" height="150" fetchpriority="high">
+      </div>
     </div>
+    <div class="header-footer">
+      <nav class="contact" aria-label="Contact and profiles">
+        <a href="https://github.com/claudiocamolese" target="_blank" rel="noopener noreferrer"><span class="icon icon-github" aria-hidden="true"></span>GitHub</a>
+        <a href="https://www.linkedin.com/in/claudio-camolese" target="_blank" rel="noopener noreferrer"><span class="icon icon-linkedin" aria-hidden="true"></span>LinkedIn</a>
+        <a href="mailto:claudiocamolese@gmail.com" id="mail-link"><span class="icon icon-email" aria-hidden="true"></span>Email</a>
+        <a href="{{ '/files/CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><span class="icon icon-file" aria-hidden="true"></span>Resume</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
-  </section>
+<dialog class="email-dialog" id="email-dialog" aria-labelledby="email-title">
+  <button class="popup-close" type="button" aria-label="Close email dialog" autofocus>×</button>
+  <p class="hero-label" id="email-title">Email</p>
+  <p><a href="mailto:claudiocamolese@gmail.com">claudiocamolese@gmail.com</a></p>
+</dialog>
 
+<div class="page-layout">
+  <aside class="section-nav">
+    <nav aria-label="On this page">
+      <p class="nav-label">Index</p>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Other projects</a>
+    </nav>
+  </aside>
 
-  <!-- ABOUT -->
-  <section
-    class="home-personal__section home-personal__about"
-    aria-label="About"
-  >
-
-    <p class="home-personal__eyebrow">
-      About
-    </p>
-
-
-    <!-- AI & ROBOTICS EXPERIENCE -->
-    <section
-      class="home-personal__subsection"
-      aria-labelledby="experience-title"
-    >
-
-      <h2 id="experience-title">
-        AI & Robotics experience
-      </h2>
-
-
-      <!-- CAMBRIDGE EXPERIENCE -->
-      <div class="home-personal__experience-row">
-
-        <div class="home-personal__experience-copy">
-          <p>
-            I was fortunate enough to conduct a research internship at the
-            <strong>University of Cambridge</strong>
-            within the
-
-            <a
-              href="https://cv4dt.github.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Computer Vision for Digital Twin (CV4DT)
+  <main id="content" class="main-content" tabindex="-1">
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I am a Master's student in Applied Mathematics at <a href="https://ens-paris-saclay.fr/">ENS Paris-Saclay</a> and <a href="https://www.universite-paris-saclay.fr/">Université Paris-Saclay</a>, in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning).</p>
+      <p>I am passionate about <strong>Physical AI</strong>. My research interests include world models, vision-language-action models, robotics, and computer vision.</p>
+      <p>During my studies, I worked on physics-informed methods for VLA safety at the <a href="#cambridge">University of Cambridge</a>, LiDAR-based perception for <a href="#driverless">autonomous racing</a>, and <a href="#urop">efficient language model inference</a>. I hold a double Master's degree specializing in Artificial Intelligence and a Bachelor's degree in Physical Engineering.</p>
+      <div class="affiliations" aria-label="Academic and research affiliations">
+        <div class="current-affiliation">
+          <h3>Currently</h3>
+          <div class="current-affiliation-list">
+            <a class="affiliation" href="#mva" aria-label="MVA — Mathematics, Vision, and Learning">
+              <img class="logo-emphasized logo-mva" src="{{ '/images/mva.png' | relative_url }}" alt="MVA — Mathematics, Vision, and Learning" loading="lazy">
             </a>
-
-            and the
-
-            <a
-              href="https://pirlab.github.io/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Physical Intelligence and Robotics Lab (PIRLab)
-            </a>,
-            under the supervision of <a
-              href="https://olafwysocki.github.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Prof. Olaf Wysocki
-            </a>, <a
-              href="https://cv4dt.github.io/author/dr-guangming-wang/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Prof. Guangming Wang
-            </a>, and <a
-              href="https://www.giuseppeaverta.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Prof. Giuseppe Averta
-            </a>,
-            focusing on Physics-Informed methods for VLA safety.
-          </p>
+            <a class="affiliation" href="#mva" aria-label="ENS Paris-Saclay">
+              <img class="logo-emphasized" src="{{ '/images/ens-ps.png' | relative_url }}" alt="ENS Paris-Saclay" loading="lazy">
+            </a>
+          </div>
         </div>
-
-
-        <!-- CAMBRIDGE IMAGES -->
-        <div
-          class="home-personal__experience-gallery"
-          data-slider
-          aria-label="University of Cambridge experience"
-        >
-
-          <div class="home-personal__experience-track">
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/cambridge-1.jpg' | relative_url }}"
-                alt="Research experience at the University of Cambridge"
-              >
+        <div class="past-affiliations">
+          <h3>Past affiliations</h3>
+          <div class="affiliation-carousel">
+            <button class="carousel-btn" type="button" data-direction="-1" aria-label="Previous affiliations" hidden>‹</button>
+            <div class="affiliation-list" tabindex="0" aria-label="Past affiliations">
+              <a class="affiliation is-active" href="#cambridge" aria-label="University of Cambridge">
+                <img class="logo-cambridge" src="{{ '/images/cambridge.png' | relative_url }}" alt="University of Cambridge" loading="lazy">
+              </a>
+              <a class="affiliation" href="#double-masters" aria-label="Politecnico di Torino">
+                <img src="{{ '/images/polito.png' | relative_url }}" alt="Politecnico di Torino" loading="lazy">
+              </a>
+              <a class="affiliation" href="#driverless" aria-label="Squadra Corse Polito">
+                <img class="logo-emphasized" src="{{ '/images/sc-polito.png' | relative_url }}" alt="Squadra Corse Polito" loading="lazy">
+              </a>
             </div>
-
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/cambridge-2.jpg' | relative_url }}"
-                alt="Robotics research at the University of Cambridge"
-              >
-            </div>
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/cambridge-3.jpg' | relative_url }}"
-                alt="Robotics research at the University of Cambridge"
-              >
-            </div>
+            <button class="carousel-btn" type="button" data-direction="1" aria-label="Next affiliations" hidden>›</button>
           </div>
-
-          <div class="home-personal__gallery-nav" aria-hidden="true">
-            <button class="home-personal__gallery-btn home-personal__gallery-btn--prev" type="button" aria-label="Previous image">&#8249;</button>
-            <button class="home-personal__gallery-btn home-personal__gallery-btn--next" type="button" aria-label="Next image">&#8250;</button>
-          </div>
-
-          <div class="home-personal__gallery-dots" aria-label="Choose image">
-            <button class="home-personal__gallery-dot is-active" type="button" aria-label="View image 1"></button>
-            <button class="home-personal__gallery-dot" type="button" aria-label="View image 2"></button>
-            <button class="home-personal__gallery-dot" type="button" aria-label="View image 3"></button>
-          </div>
-
         </div>
-
       </div>
-
-
-      <!-- DRIVERLESS EXPERIENCE -->
-      <div class="home-personal__experience-row">
-
-        <div class="home-personal__experience-copy">
-          <p>
-            During my studies, I worked as a <strong>Perception and AI Engineer</strong>
-            in the
-            <a
-              href="https://www.squadracorsepolito.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Squadra Corse Polito | Driverless division
-            </a>,
-            contributing to LiDAR-based perception systems for autonomous driving
-            state estimation. I also competed in the Formula Student FSAE competition.
-          </p>
-        </div>
-
-
-        <!-- DRIVERLESS IMAGES -->
-        <div
-          class="home-personal__experience-gallery"
-          data-slider
-          aria-label="Autonomous driving experience"
-        >
-
-          <div class="home-personal__experience-track">
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/driverless-2.jpg' | relative_url }}"
-                alt="Squadra Corse Polito driverless car"
-              >
-            </div>
-
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/driverless-1.jpg' | relative_url }}"
-                alt="LiDAR perception system for autonomous driving"
-              >
-            </div>
-            <div class="home-personal__experience-slide">
-              <img
-                src="{{ '/images/driverless-3.jpg' | relative_url }}"
-                alt="LiDAR perception system for autonomous driving"
-              >
-            </div>
-          </div>
-
-          <div class="home-personal__gallery-nav" aria-hidden="true">
-            <button class="home-personal__gallery-btn home-personal__gallery-btn--prev" type="button" aria-label="Previous image">&#8249;</button>
-            <button class="home-personal__gallery-btn home-personal__gallery-btn--next" type="button" aria-label="Next image">&#8250;</button>
-          </div>
-
-          <div class="home-personal__gallery-dots" aria-label="Choose image">
-            <button class="home-personal__gallery-dot is-active" type="button" aria-label="View image 1"></button>
-            <button class="home-personal__gallery-dot" type="button" aria-label="View image 2"></button>
-            <button class="home-personal__gallery-dot" type="button" aria-label="View image 3"></button>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- UROP EXPERIENCE -->
-      <div class="home-personal__about-grid">
-
-        <p>
-          During my studies, I worked as an <strong>Undergraduate Researcher</strong>
-          through
-
-          <a
-            href="https://www.polito.it/didattica/polito/learning-experiences-in-research/undergraduate-research-opportunities-programme"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            UROP
-          </a>
-
-          at Politecnico di Torino, investigating methods to reduce the computational
-          complexity of large language model inference for deployment on edge devices.
-        </p>
-
-      </div>
-
     </section>
 
-
-    <!-- ACADEMIC BACKGROUND -->
-    <section
-      class="home-personal__subsection home-personal__academic"
-      aria-labelledby="academic-title"
-    >
-
-      <h2 id="academic-title">
-        Academic background
-      </h2>
-
-
-      <div class="home-personal__about-grid">
-
-        <p>
-          I obtained a double Master's degree from
-          <strong>Politecnico di Torino</strong>
-          (Italy) and the
-
-          <strong>
-            National School of Computer Science and Applied Mathematics
-          </strong>
-
-          (France), specializing in <strong>Artificial Intelligence</strong>.<br>
-          Before that, I obtained a Bachelor's degree in
-          <strong>Physical Engineering</strong> from Politecnico di Torino.
-        </p>
-
-      </div>
-
+    <section id="news" class="news" aria-labelledby="news-title">
+      <h2 id="news-title">News</h2>
+      <p><span class="date-badge">Now</span> I am starting my Master's degree in Paris in the <a href="https://www.master-mva.com/">MVA program</a> (Mathematics, Vision, and Learning).</p>
+      <p><time class="date-badge" datetime="2026-09">Sep. 2026</time> I graduated from Politecnico di Torino and ENSIMAG, specializing in Artificial Intelligence.</p>
+      <p><time class="date-badge" datetime="2026-08">Aug. 2026</time> I completed my research internship at the University of Cambridge. What an experience!</p>
     </section>
 
-  </section>
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Research experience</h2>
+      <article class="entry-card" id="cambridge">
+        <div class="entry-logo"><img class="logo-cambridge" src="{{ '/images/cambridge.png' | relative_url }}" alt="University of Cambridge" loading="lazy"></div>
+        <div class="entry-date"><span class="date-badge">2026</span></div>
+        <div class="entry-copy">
+          <h3>University of Cambridge</h3>
+          <p>Research internship with <a href="https://cv4dt.github.io/">CV4DT</a>, <a href="https://pirlab.github.io/index.html">PIRLab</a>, and <a href="https://vandal.polito.it/">VANDAL</a>, advised by <a href="https://olafwysocki.github.io/">Prof. Olaf Wysocki</a>, <a href="https://cv4dt.github.io/author/dr-guangming-wang/">Prof. Guangming Wang</a>, and <a href="https://www.giuseppeaverta.me/">Prof. Giuseppe Averta</a>.</p>
+          <p>Physics-informed methods for vision-language-action model safety and robotic manipulation.</p>
+        </div>
+      </article>
+      <article class="entry-card" id="driverless">
+        <div class="entry-logo entry-logo--captioned">
+          <img class="logo-emphasized" src="{{ '/images/sc-polito.png' | relative_url }}" alt="Squadra Corse Polito" loading="lazy">
+          <span>Squadra Corse</span>
+        </div>
+        <div class="entry-date"><span class="date-badge">2024–2025</span></div>
+        <div class="entry-copy">
+          <h3>Squadra Corse Polito · Driverless</h3>
+          <p>Perception and AI Engineer in the <a href="https://www.squadracorsepolito.com/">Squadra Corse Polito Driverless division</a>. Developed LiDAR-based perception and state-estimation systems for autonomous driving, and competed in Formula SAE Driverless.</p>
+        </div>
+      </article>
+      <article class="entry-card" id="urop">
+        <div class="entry-logo"><img src="{{ '/images/polito.png' | relative_url }}" alt="Politecnico di Torino" loading="lazy"></div>
+        <div class="entry-date"><span class="date-badge">2025</span></div>
+        <div class="entry-copy">
+          <h3>Undergraduate Research Opportunities Programme</h3>
+          <p>Undergraduate Researcher at <a href="https://www.polito.it/didattica/polito/learning-experiences-in-research/undergraduate-research-opportunities-programme">Politecnico di Torino · UROP</a>, studying memory-efficient large language model inference for deployment on edge devices.</p>
+        </div>
+      </article>
+    </section>
 
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <article class="entry-card publication-card">
+        <div class="entry-copy">
+          <h3>PhiSVLA: Physics-Informed Safety for Vision Language Action manipulation</h3>
+          <p><strong>Claudio Camolese</strong>, Giuseppe Averta, Olaf Wysocki, Guangming Wang</p>
+          <p class="muted">Manuscript in preparation</p>
+        </div>
+      </article>
+    </section>
 
-  <!-- NEWS -->
-  <section
-    class="home-personal__section home-personal__timeline"
-    aria-labelledby="news-title"
-  >
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <article class="entry-card" id="mva">
+        <div class="entry-logo"><img src="{{ '/images/mva_ed.png' | relative_url }}" alt="MVA, ENS Paris-Saclay and Université Paris-Saclay" loading="lazy"></div>
+        <div class="entry-date"><span class="date-badge">2026–2027</span></div>
+        <div class="entry-copy"><h3>ENS Paris-Saclay · Université Paris-Saclay</h3><p>Master of Research in Applied Mathematics, <a href="https://www.master-mva.com/">MVA track</a> — Mathematics, Vision, and Learning.</p></div>
+      </article>
+      <article class="entry-card" id="double-masters">
+        <div class="entry-logo"><img src="{{ '/images/polito.png' | relative_url }}" alt="Politecnico di Torino" loading="lazy"></div>
+        <div class="entry-date"><span class="date-badge">2024–2026</span></div>
+        <div class="entry-copy"><h3>Politecnico di Torino · ENSIMAG</h3><p>Double Master's degree from Politecnico di Torino and the National School of Computer Science and Applied Mathematics, specializing in Artificial Intelligence.</p></div>
+      </article>
+      <article class="entry-card">
+        <div class="entry-logo"><img src="{{ '/images/polito.png' | relative_url }}" alt="Politecnico di Torino" loading="lazy"></div>
+        <div class="entry-date"><span class="date-badge">2021–2024</span></div>
+        <div class="entry-copy"><h3>Politecnico di Torino</h3><p>Bachelor's degree in Physical Engineering.</p></div>
+      </article>
+    </section>
 
-    <h2 id="news-title">
-      News
-    </h2>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Other projects</h2>
+      <article class="entry-card project-card"><h3>RGB-D 6D Object Pose Estimation</h3><p>An end-to-end pipeline for object position and orientation estimation, evaluated on LINEMOD and adapted for real-time traffic-cone pose estimation in the Squadra Corse Driverless simulator.</p></article>
+      <article class="entry-card project-card"><h3>Semantic Scene Understanding for Autonomous Drones</h3><p>Semantic segmentation of aerial imagery with DeepLabV3+ for autonomous navigation and environmental perception.</p></article>
+      <article class="entry-card project-card"><h3>Sim-to-Real Reinforcement Learning</h3><p>Robust MuJoCo Hopper control policies under dynamics shifts, using uniform domain randomization to study transfer across different robot dynamics.</p></article>
+      <article class="entry-card project-card"><h3>Generative Models for Image Synthesis</h3><p>Diffusion models, flow-matching models, GANs, and VAEs implemented from scratch, comparing training stability, sample quality, and inference behaviour.</p></article>
+    </section>
 
-
-    <ol class="home-personal__news-list">
-
-      <li>
-
-        <time>
-          Now
-        </time>
-
-        <p>
-          I am starting my Master's degree in Paris in the
-
-          <a
-            href="https://www.master-mva.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            MVA program
-          </a>
-
-          (Mathematics, Vision, and Learning).
-        </p>
-
-      </li>
-
-
-      <li>
-
-        <time>
-          Sept 2026
-        </time>
-
-        <p>
-          I graduated from <strong>Politecnico di Torino</strong>
-          (Italy) and the
-
-          <strong>
-            National School of Computer Science and Applied Mathematics
-          </strong>
-
-          (France), specializing in <strong>Artificial Intelligence</strong>.
-        </p>
-
-      </li>
-
-
-      <li>
-
-        <time>
-          Aug 2026
-        </time>
-
-        <p>
-          I completed my research internship at the <strong>University of Cambridge</strong>.
-          What an experience!
-        </p>
-
-      </li>
-
-    </ol>
-
-  </section>
-
-</main>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('[data-slider]').forEach(function (slider) {
-      const track = slider.querySelector('.home-personal__experience-track');
-      const slides = Array.from(slider.querySelectorAll('.home-personal__experience-slide'));
-      const prevBtn = slider.querySelector('.home-personal__gallery-btn--prev');
-      const nextBtn = slider.querySelector('.home-personal__gallery-btn--next');
-      const dots = Array.from(slider.querySelectorAll('.home-personal__gallery-dot'));
-      let activeIndex = 0;
-
-      function renderSlide(index) {
-        activeIndex = (index + slides.length) % slides.length;
-        track.style.transform = 'translateX(-' + (activeIndex * 100) + '%)';
-
-        dots.forEach(function (dot, dotIndex) {
-          dot.classList.toggle('is-active', dotIndex === activeIndex);
-        });
-      }
-
-      prevBtn.addEventListener('click', function () {
-        renderSlide(activeIndex - 1);
-      });
-
-      nextBtn.addEventListener('click', function () {
-        renderSlide(activeIndex + 1);
-      });
-
-      dots.forEach(function (dot, index) {
-        dot.addEventListener('click', function () {
-          renderSlide(index);
-        });
-      });
-
-      renderSlide(0);
-    });
-  });
-</script>
+    <footer class="site-footer"><span>© Claudio Camolese {{ site.time | date: '%Y' }}</span><a href="#top">Back to top ↑</a></footer>
+  </main>
+</div>
